@@ -1,0 +1,38 @@
+This file is particularly related to the source code of ElleseesUI.
+If you're not aware of that, we recommend you not taking a look in this
+file, because it could cause confusions.
+
+File icon (24x24)
+By: Icons8
+URL: https://icons8.com/icon/11651/file
+Relative path: ./Assets/Icons8External/File.png
+
+Object icon (24x24)
+By: Icons8
+URL: https://icons8.com/icon/oDnwkUMHkDIt/object
+Relative path: ./Assets/Icons8External/Object.png
+
+Export icon (24x24)
+By: Icons8
+URL: https://icons8.com/icon/2659/export
+Relative path: ./Assets/Icons8External/Export.png
+
+About icon (24x24)
+By: Icons8
+URL: https://icons8.com/icon/85139/about
+Relative path: ./Assets/Icons8External/About.png
+
+Gear icon (24x24)
+By: Icons8
+URL: https://icons8.com/icon/77240/gear
+Relative path: ./Assets/Icons8External/Gear.png
+
+Text icon (24x24)
+By: Icons8
+URL: https://icons8.com/icon/bkvFLltNGV8a/text
+Relative path: ./Assets/Icons8External/Text.png
+
+Magic Wand icon (24x24)
+By: Icons8
+URL: https://icons8.com/icon/626/fantasy
+Relative path: ./Assets/Icons8External/MagicWand.png

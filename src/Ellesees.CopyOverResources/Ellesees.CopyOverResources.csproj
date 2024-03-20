@@ -1,0 +1,138 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyTitle>ELLESEES Local resources</AssemblyTitle>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <Company>The ELLESEES Video Editing Project</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="app_info\app_copyright" />
+    <None Remove="app_info\app_dev" />
+    <None Remove="app_info\app_dev_begin" />
+    <None Remove="app_info\app_primary_dev" />
+    <None Remove="app_info\app_publish_year" />
+    <None Remove="app_info\app_version" />
+    <None Remove="fonts\Google\Dosis\Dosis-Bold.ttf" />
+    <None Remove="fonts\Google\Dosis\Dosis-ExtraBold.ttf" />
+    <None Remove="fonts\Google\Dosis\Dosis-ExtraLight.ttf" />
+    <None Remove="fonts\Google\Dosis\Dosis-Light.ttf" />
+    <None Remove="fonts\Google\Dosis\Dosis-Medium.ttf" />
+    <None Remove="fonts\Google\Dosis\Dosis-Regular.ttf" />
+    <None Remove="fonts\Google\Dosis\Dosis-SemiBold.ttf" />
+    <None Remove="fonts\Google\Roboto\LICENSE.txt" />
+    <None Remove="fonts\Google\Roboto\Roboto-Black.ttf" />
+    <None Remove="fonts\Google\Roboto\Roboto-BlackItalic.ttf" />
+    <None Remove="fonts\Google\Roboto\Roboto-Bold.ttf" />
+    <None Remove="fonts\Google\Roboto\Roboto-BoldItalic.ttf" />
+    <None Remove="fonts\Google\Roboto\Roboto-Italic.ttf" />
+    <None Remove="fonts\Google\Roboto\Roboto-Light.ttf" />
+    <None Remove="fonts\Google\Roboto\Roboto-LightItalic.ttf" />
+    <None Remove="fonts\Google\Roboto\Roboto-Medium.ttf" />
+    <None Remove="fonts\Google\Roboto\Roboto-MediumItalic.ttf" />
+    <None Remove="fonts\Google\Roboto\Roboto-Regular.ttf" />
+    <None Remove="fonts\Google\Roboto\Roboto-Thin.ttf" />
+    <None Remove="fonts\Google\Roboto\Roboto-ThinItalic.ttf" />
+    <None Remove="fonts\Google\Space Grotesk\SpaceGrotesk-Bold.ttf" />
+    <None Remove="fonts\Google\Space Grotesk\SpaceGrotesk-Light.ttf" />
+    <None Remove="fonts\Google\Space Grotesk\SpaceGrotesk-Medium.ttf" />
+    <None Remove="fonts\Google\Space Grotesk\SpaceGrotesk-Regular.ttf" />
+    <None Remove="fonts\Google\Space Grotesk\SpaceGrotesk-SemiBold.ttf" />
+    <None Remove="fonts\Microsoft\Arial\arial.ttf" />
+    <None Remove="fonts\Microsoft\Arial\arialbd.ttf" />
+    <None Remove="fonts\Microsoft\Arial\arialbi.ttf" />
+    <None Remove="fonts\Microsoft\Arial\ariali.ttf" />
+    <None Remove="fonts\Microsoft\Arial\ARIALN.TTF" />
+    <None Remove="fonts\Microsoft\Arial\ARIALNB.TTF" />
+    <None Remove="fonts\Microsoft\Arial\ARIALNBI.TTF" />
+    <None Remove="fonts\Microsoft\Arial\ARIALNI.TTF" />
+    <None Remove="fonts\Microsoft\Arial\ariblk.ttf" />
+    <None Remove="fonts\Microsoft\Calibri\calibri.ttf" />
+    <None Remove="fonts\Microsoft\Calibri\calibrib.ttf" />
+    <None Remove="fonts\Microsoft\Calibri\calibrii.ttf" />
+    <None Remove="fonts\Microsoft\Calibri\calibril.ttf" />
+    <None Remove="fonts\Microsoft\Calibri\calibrili.ttf" />
+    <None Remove="fonts\Microsoft\Calibri\calibriz.ttf" />
+    <None Remove="fonts\Microsoft\Cascadia Code\CascadiaCode.ttf" />
+    <None Remove="fonts\Microsoft\Cascadia Mono\CascadiaMono.ttf" />
+    <None Remove="fonts\Microsoft\Century Gothic\GOTHIC.TTF" />
+    <None Remove="fonts\Microsoft\Century Gothic\GOTHICB.TTF" />
+    <None Remove="fonts\Microsoft\Century Gothic\GOTHICBI.TTF" />
+    <None Remove="fonts\Microsoft\Century Gothic\GOTHICI.TTF" />
+    <None Remove="fonts\Microsoft\Comic Sans MS\comic.ttf" />
+    <None Remove="fonts\Microsoft\Comic Sans MS\comicbd.ttf" />
+    <None Remove="fonts\Microsoft\Comic Sans MS\comici.ttf" />
+    <None Remove="fonts\Microsoft\Comic Sans MS\comicz.ttf" />
+    <None Remove="fonts\Microsoft\Consolas\consola.ttf" />
+    <None Remove="fonts\Microsoft\Consolas\consolab.ttf" />
+    <None Remove="fonts\Microsoft\Consolas\consolai.ttf" />
+    <None Remove="fonts\Microsoft\Consolas\consolaz.ttf" />
+    <None Remove="fonts\Microsoft\Courier New\cour.ttf" />
+    <None Remove="fonts\Microsoft\Courier New\courbd.ttf" />
+    <None Remove="fonts\Microsoft\Courier New\courbi.ttf" />
+    <None Remove="fonts\Microsoft\Courier New\couri.ttf" />
+    <None Remove="fonts\Microsoft\Elephant\ELEPHNT.TTF" />
+    <None Remove="fonts\Microsoft\Elephant\ELEPHNTI.TTF" />
+    <None Remove="fonts\Microsoft\Lucida Console\lucon.ttf" />
+    <None Remove="fonts\Microsoft\OCR A\OCRAEXT.TTF" />
+    <None Remove="fonts\Microsoft\Segoe UI\segoeui.ttf" />
+    <None Remove="fonts\Microsoft\Segoe UI\segoeuib.ttf" />
+    <None Remove="fonts\Microsoft\Segoe UI\segoeuii.ttf" />
+    <None Remove="fonts\Microsoft\Segoe UI\segoeuil.ttf" />
+    <None Remove="fonts\Microsoft\Segoe UI\segoeuisl.ttf" />
+    <None Remove="fonts\Microsoft\Segoe UI\segoeuiz.ttf" />
+    <None Remove="fonts\Microsoft\Segoe UI\seguibl.ttf" />
+    <None Remove="fonts\Microsoft\Segoe UI\seguibli.ttf" />
+    <None Remove="fonts\Microsoft\Segoe UI\seguili.ttf" />
+    <None Remove="fonts\Microsoft\Segoe UI\seguisb.ttf" />
+    <None Remove="fonts\Microsoft\Segoe UI\seguisbi.ttf" />
+    <None Remove="fonts\Microsoft\Segoe UI\seguisli.ttf" />
+    <None Remove="fonts\Microsoft\Tahoma\tahoma.ttf" />
+    <None Remove="fonts\Microsoft\Tahoma\tahomabd.ttf" />
+    <None Remove="fonts\Microsoft\Times New Roman\times.ttf" />
+    <None Remove="fonts\Microsoft\Times New Roman\timesbd.ttf" />
+    <None Remove="fonts\Microsoft\Times New Roman\timesbi.ttf" />
+    <None Remove="fonts\Microsoft\Times New Roman\timesi.ttf" />
+    <None Remove="fonts\Microsoft\Trebuchet MS\trebuc.ttf" />
+    <None Remove="fonts\Microsoft\Trebuchet MS\trebucbd.ttf" />
+    <None Remove="fonts\Microsoft\Trebuchet MS\trebucbi.ttf" />
+    <None Remove="fonts\Microsoft\Trebuchet MS\trebucit.ttf" />
+    <None Remove="fonts\Microsoft\Verdana\verdana.ttf" />
+    <None Remove="fonts\Microsoft\Verdana\verdanab.ttf" />
+    <None Remove="fonts\Microsoft\Verdana\verdanai.ttf" />
+    <None Remove="fonts\Microsoft\Verdana\verdanaz.ttf" />
+    <None Remove="fonts\MICROSOFT_FONT_FAQ.txt" />
+    <None Remove="fonts\README.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+      <Content Include="fonts\**">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+      <Content Include="_assets\**">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+      <Content Include="app_info\**">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="APP_LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ICON_CREDITS.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
