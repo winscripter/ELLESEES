@@ -1,0 +1,68 @@
+﻿<Window x:Class="ElleseesUI.ExceptionNotifyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElleseesUI"
+        mc:Ignorable="d"
+        Title="An exception has occurred" Height="300" Width="600"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        BorderBrush="Red"
+        BorderThickness="2">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Border Grid.ColumnSpan="2"
+              Background="#343434"
+              MouseDown="Grid_MouseDown">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right">
+                <Button x:Name="WindowCloseButton"
+            Style="{StaticResource WindowButtonCloseStyle}" Click="WindowCloseButton_Click"></Button>
+            </StackPanel>
+        </Border>
+
+        <Grid Grid.Row="1" Background="#241F2F">
+            <TextBlock FontSize="24"
+                   Foreground="White"
+                   TextWrapping="Wrap">
+                Uncaught exception has occurred :(
+            </TextBlock>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="1"
+              Background="#464646">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <TextBlock Foreground="White"
+                   FontSize="24"
+                   Text="This task could not be completed. :("
+                       Grid.Row="0"/>
+
+            <TextBlock Foreground="White"
+                   FontSize="14"
+                       Grid.Row="1"
+                       TextWrapping="Wrap">
+                It looks like an exception occurred during that task. As a result, no change was inflicted. We're very sorry for the inconvenience we might have caused to you. :(
+            </TextBlock>
+
+            <TextBlock Foreground="White"
+                       FontSize="14"
+                       Grid.Row="2"
+                       TextWrapping="Wrap">
+                If you believe that this is a bug and not intended to happen, you can report a bug to us. Your feedback is as valuable as treasure for us. ❤
+            </TextBlock>
+        </Grid>
+    </Grid>
+</Window>

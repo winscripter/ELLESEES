@@ -1,0 +1,121 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyTitle>ELLESEES</AssemblyTitle>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <Company>The ELLESEES Video Editing Project</Company>
+    <ApplicationIcon>ELLESEES.ico</ApplicationIcon>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Error.png" />
+    <None Remove="Assets\Icons8External\MagicWand.png" />
+    <None Remove="Assets\Icons8External\Text.png" />
+    <None Remove="Fonts\SpaceGrotesk.ttf" />
+    <None Remove="Assets\Ellesees.png" />
+    <None Remove="Assets\Fill.png" />
+    <None Remove="Assets\Icons8External\About.png" />
+    <None Remove="Assets\Icons8External\Export.png" />
+    <None Remove="Assets\Icons8External\File.png" />
+    <None Remove="Assets\Icons8External\Gear.png" />
+    <None Remove="Assets\Icons8External\Object.png" />
+    <None Remove="Assets\ImagePreview\Empty240x170.png" />
+    <None Remove="Assets\ImagePreview\Empty360x290.png" />
+    <None Remove="Assets\ImagePreview\Empty480x410.png" />
+    <None Remove="Assets\ImagePreview\Empty560x490.png" />
+    <None Remove="Assets\ImagePreview\Empty640x570.png" />
+    <None Remove="Assets\ImagePreview\Empty720x650.png" />
+    <None Remove="Assets\ImagePreview\Empty840x770.png" />
+    <None Remove="Assets\ImagePreview\Empty960x890.png" />
+    <None Remove="Assets\More.png" />
+    <None Remove="Assets\Play.png" />
+    <None Remove="Assets\PreviewFrameEmpty.png" />
+    <None Remove="Assets\Redo.png" />
+    <None Remove="Assets\RedoWhite.png" />
+    <None Remove="Assets\Text.png" />
+    <None Remove="Assets\ToEnd.png" />
+    <None Remove="Assets\ToStart.png" />
+    <None Remove="Assets\Undo.png" />
+    <None Remove="Assets\UndoWhite.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ELLESEES.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ellesees.Base\Ellesees.Base.csproj" />
+    <ProjectReference Include="..\Ellesees.CopyOverResources\Ellesees.CopyOverResources.csproj" />
+    <ProjectReference Include="..\Ellesees.ProjectParser\Ellesees.ProjectParser.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Error.png" />
+    <Resource Include="Assets\Icons8External\MagicWand.png" />
+    <Resource Include="Assets\Icons8External\Text.png" />
+    <Resource Include="Fonts\SpaceGrotesk.ttf" />
+    <Resource Include="Assets\Ellesees.png" />
+    <Resource Include="Assets\Fill.png" />
+    <Resource Include="Assets\Icons8External\About.png" />
+    <Resource Include="Assets\Icons8External\Export.png" />
+    <Resource Include="Assets\Icons8External\File.png" />
+    <Resource Include="Assets\Icons8External\Gear.png" />
+    <Resource Include="Assets\Icons8External\Object.png" />
+    <Resource Include="Assets\ImagePreview\Empty240x170.png" />
+    <Resource Include="Assets\ImagePreview\Empty360x290.png" />
+    <Resource Include="Assets\ImagePreview\Empty480x410.png" />
+    <Resource Include="Assets\ImagePreview\Empty560x490.png" />
+    <Resource Include="Assets\ImagePreview\Empty640x570.png" />
+    <Resource Include="Assets\ImagePreview\Empty720x650.png" />
+    <Resource Include="Assets\ImagePreview\Empty840x770.png" />
+    <Resource Include="Assets\ImagePreview\Empty960x890.png" />
+    <Resource Include="Assets\More.png" />
+    <Resource Include="Assets\Play.png" />
+    <Resource Include="Assets\PreviewFrameEmpty.png" />
+    <Resource Include="Assets\Redo.png" />
+    <Resource Include="Assets\RedoWhite.png" />
+    <Resource Include="Assets\Text.png" />
+    <Resource Include="Assets\ToEnd.png" />
+    <Resource Include="Assets\ToStart.png" />
+    <Resource Include="Assets\Undo.png" />
+    <Resource Include="Assets\UndoWhite.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Core\PropertyEditor\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Ini" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="VideoSharp">
+      <HintPath>..\..\VideoSharp\VideoSharp\bin\Debug\net6.0\VideoSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\User\source\repos\Ellesees\ElleseesUI\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\User\source\repos\Ellesees\ElleseesUI\.editorconfig" />
+  </ItemGroup>
+
+</Project>

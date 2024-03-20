@@ -1,0 +1,60 @@
+﻿// MIT License
+// 
+// Copyright (c) 2024 winscripter
+// 
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+// 
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+// 
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+//
+
+using ElleseesUI.Abstractions;
+using ElleseesUI.Exceptions;
+
+namespace ElleseesUI.Versioning;
+
+/// <summary>
+/// Represents the developer of this application.
+/// </summary>
+public class ApplicationDeveloper : IValidatable
+{
+    /// <summary>
+    /// Name of the file where data is read from.
+    /// </summary>
+    public const string Name = "app_dev";
+
+    /// <summary>
+    /// Name of the developer.
+    /// </summary>
+    public string Developer { get; set; }
+
+    /// <summary>
+    /// Initializes a new instance of <see cref="ApplicationDeveloper" />.
+    /// </summary>
+    public ApplicationDeveloper()
+    {
+        Validate();
+        Developer = File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "app_info", Name));
+    }
+
+    /// <inheritdoc />
+    public bool IsValid()
+        => File.Exists(Path.Combine(Directory.GetCurrentDirectory(), "app_info", Name));
+
+    /// <inheritdoc />
+    public void Validate()
+        => ValidationException.ThrowFrom(this);
+}

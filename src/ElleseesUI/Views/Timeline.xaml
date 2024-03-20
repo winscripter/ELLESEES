@@ -1,0 +1,229 @@
+﻿<Page x:Class="ElleseesUI.Views.Timeline"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ElleseesUI.Views"
+      xmlns:ctls="clr-namespace:ElleseesUI.Controls.TimelineObjects"
+      mc:Ignorable="d" 
+      d:DesignHeight="620" d:DesignWidth="1080"
+      Title="Timeline">
+
+    <Grid Background="#363636"
+          x:Name="EditorBackground">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="320" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="27" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1"
+              Grid.ColumnSpan="2"
+              Background="#282828"
+              x:Name="StatusBackground">
+            <Grid.ContextMenu>
+                <ContextMenu Width="150">
+                    <MenuItem Style="{StaticResource ContextMenuItem}" Header="Do not disturb" Click="ToggleDoNotDisturb" />
+                    <MenuItem Style="{StaticResource ContextMenuItem}" Header="Set background color..." Click="SetStatusBarBackground" />
+                    <MenuItem Style="{StaticResource ContextMenuItem}" Header="Set foreground color..." Click="SetStatusBarForeground" />
+                </ContextMenu>
+            </Grid.ContextMenu>
+            <Label Style="{StaticResource StatusBarTextStyle}"
+                   x:Name="Status"
+                   FontFamily="../Fonts/#Space Grotesk">
+                Idle
+            </Label>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+
+            <Image Height="535" Width="320" x:Name="PreviewFrame"
+                   Source="../Assets/PreviewFrameEmpty.png" />
+
+            <Grid Grid.Row="1" Background="#313131">
+            </Grid>
+        </Grid>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="300" />
+            </Grid.RowDefinitions>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <WrapPanel>
+                    <WrapPanel.ContextMenu>
+                        <ContextMenu Width="160">
+                            <MenuItem Header="Add image" Style="{StaticResource ContextMenuItem}" />
+                            <MenuItem Header="Add audio" Style="{StaticResource ContextMenuItem}" />
+                            <MenuItem Header="Add video" Style="{StaticResource ContextMenuItem}" />
+                            <Separator />
+                            <MenuItem Header="About" Style="{StaticResource ContextMenuItem}" />
+                        </ContextMenu>
+                    </WrapPanel.ContextMenu>
+                    
+                    <Button Style="{StaticResource Tool}"
+                            Click="OnTextToolClick">
+                        <Image Source="../Assets/Icons8External/Text.png" />
+                    </Button>
+                    <Button Style="{StaticResource Tool}"
+                            Click="OnMagicWandToolClick">
+                        <Image Source="../Assets/Icons8External/MagicWand.png" />
+                    </Button>
+                </WrapPanel>
+                
+                <Grid Grid.Column="1">
+                    <Grid.ContextMenu>
+                        <ContextMenu Width="160">
+                            <MenuItem Header="Add image" Style="{StaticResource ContextMenuItem}" />
+                            <MenuItem Header="Add audio" Style="{StaticResource ContextMenuItem}" />
+                            <MenuItem Header="Add video" Style="{StaticResource ContextMenuItem}" />
+                            <Separator />
+                            <MenuItem Header="About" Style="{StaticResource ContextMenuItem}" />
+                        </ContextMenu>
+                    </Grid.ContextMenu>
+                    
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Orientation="Horizontal">
+                        <!-- Files -->
+                        <StackPanel Style="{StaticResource ManagementAreaTab}" x:Name="Files" MouseLeftButtonUp="Files_MouseLeftButtonUp"
+                                    Background="#747474">
+                            <Image Source="../Assets/Icons8External/File.png" />
+                        </StackPanel>
+                        <!-- Objects -->
+                        <StackPanel Style="{StaticResource ManagementAreaTab}" x:Name="Objects" MouseLeftButtonUp="Objects_MouseLeftButtonUp">
+                            <Image Source="../Assets/Icons8External/Object.png" />
+                        </StackPanel>
+                        <!-- Export -->
+                        <StackPanel Style="{StaticResource ManagementAreaTab}" x:Name="Export" MouseLeftButtonUp="Export_MouseLeftButtonUp">
+                            <Image Source="../Assets/Icons8External/Export.png" />
+                        </StackPanel>
+                        <!-- About -->
+                        <StackPanel Style="{StaticResource ManagementAreaTab}" x:Name="About" MouseLeftButtonUp="About_MouseLeftButtonUp">
+                            <Image Source="../Assets/Icons8External/About.png" />
+                        </StackPanel>
+                        <!-- Edit elsewhere -->
+                        <StackPanel Style="{StaticResource ManagementAreaTab}" x:Name="EditElsewhere" MouseLeftButtonUp="EditElsewhere_MouseLeftButtonUp">
+                            <Image Source="../Assets/Icons8External/Gear.png" />
+                        </StackPanel>
+                    </StackPanel>
+
+                    <Grid Grid.Row="1"
+                          ContextMenu="{x:Null}">
+                        <Frame Background="#363636"
+                               Height="250"
+                               Width="380"
+                               NavigationUIVisibility="Hidden"
+                               x:Name="EditAreaView">
+                            
+                        </Frame>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60" />
+                    <ColumnDefinition Width="640" />
+                    <ColumnDefinition Width="60" />
+                </Grid.ColumnDefinitions>
+
+                <Button Style="{StaticResource BackOrForwardButton}"
+                        Grid.Column="0"
+                        x:Name="TimelineBackButton"
+                        Click="TimelineBackButton_Click">
+                    <Path Fill="LightGray"
+                          Height="60"
+                          Width="60"
+                          Data="M 0,30 L 30,60 30,0" />
+                </Button>
+
+                <Button Style="{StaticResource BackOrForwardButton}"
+                        Grid.Column="2"
+                        x:Name="TimelineForwardButton"
+                        Click="TimelineForwardButton_Click">
+                    <Path Fill="LightGray"
+                          Height="60"
+                          Width="60"
+                          Data="M 60,30 L 30,60 30,0" />
+                </Button>
+
+                <StackPanel Grid.Column="1">
+                    <StackPanel Height="24"
+                                Background="#313131"
+                                HorizontalAlignment="Left"
+                                Orientation="Horizontal">
+                        <Label Style="{StaticResource TimelineSecond}"
+                               x:Name="Time1">
+                            00:00:00
+                        </Label>
+                        <Label Style="{StaticResource TimelineSecond}"
+                                x:Name="Time2">
+                            00:00:01
+                        </Label>
+                        <Label Style="{StaticResource TimelineSecond}"
+                                x:Name="Time3">
+                            00:00:02
+                        </Label>
+                        <Label Style="{StaticResource TimelineSecond}"
+                                x:Name="Time4">
+                            00:00:03
+                        </Label>
+                    </StackPanel>
+                    <StackPanel>
+                        <WrapPanel Height="50"
+                                   Margin="5,10,0,0">
+                            <ctls:TextVisibility ChildValue="Text" Width="157" x:Name="Text1" Visibility="Hidden" />
+                            <ctls:TextVisibility ChildValue="Text" Width="157" x:Name="Text2" Visibility="Hidden" />
+                            <ctls:TextVisibility ChildValue="Text" Width="157" x:Name="Text3" Visibility="Hidden" />
+                            <ctls:TextVisibility ChildValue="Text" Width="157" x:Name="Text4" Visibility="Hidden" />
+                        </WrapPanel>
+                        <WrapPanel Height="50"
+                                   Margin="5,0,0,0">
+                            <ctls:EffectVisibility ChildValue="Effects" Width="157" x:Name="Effect1" Visibility="Hidden" />
+                            <ctls:EffectVisibility ChildValue="Effects" Width="157" x:Name="Effect2" Visibility="Hidden" />
+                            <ctls:EffectVisibility ChildValue="Effects" Width="157" x:Name="Effect3" Visibility="Hidden" />
+                            <ctls:EffectVisibility ChildValue="Effects" Width="157" x:Name="Effect4" Visibility="Hidden" />
+                        </WrapPanel>
+                        <WrapPanel Height="50"
+                                   Margin="5,0,0,0">
+                            <ctls:ImageVisibility ChildValue="Image" Width="157" x:Name="Image1" Visibility="Hidden" />
+                            <ctls:ImageVisibility ChildValue="Image" Width="157" x:Name="Image2" Visibility="Hidden" />
+                            <ctls:ImageVisibility ChildValue="Image" Width="157" x:Name="Image3" Visibility="Hidden" />
+                            <ctls:ImageVisibility ChildValue="Image" Width="157" x:Name="Image4" Visibility="Hidden" />
+                        </WrapPanel>
+                        <WrapPanel Height="50"
+                                   Margin="5,0,0,0">
+                            <ctls:AudioVisibility ChildValue="Audio" Width="157" x:Name="Audio1" Visibility="Hidden" />
+                            <ctls:AudioVisibility ChildValue="Audio" Width="157" x:Name="Audio2" Visibility="Hidden" />
+                            <ctls:AudioVisibility ChildValue="Audio" Width="157" x:Name="Audio3" Visibility="Hidden" />
+                            <ctls:AudioVisibility ChildValue="Audio" Width="157" x:Name="Audio4" Visibility="Hidden" />
+                        </WrapPanel>
+                        <WrapPanel Height="50"
+                                   Margin="5,0,0,0">
+                            <ctls:VideoVisibility ChildValue="Video" Width="157" x:Name="Video1" Visibility="Hidden" />
+                            <ctls:VideoVisibility ChildValue="Video" Width="157" x:Name="Video2" Visibility="Hidden" />
+                            <ctls:VideoVisibility ChildValue="Video" Width="157" x:Name="Video3" Visibility="Hidden" />
+                            <ctls:VideoVisibility ChildValue="Video" Width="157" x:Name="Video4" Visibility="Hidden" />
+                        </WrapPanel>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

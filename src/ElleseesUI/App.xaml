@@ -1,0 +1,38 @@
+﻿<Application x:Class="ElleseesUI.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ElleseesUI"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/WindowButtonCloseStyle.xaml" />
+                <ResourceDictionary Source="Themes/TitleBarTextStyle.xaml" />
+                <ResourceDictionary Source="Themes/StatusBarStyle.xaml" />
+                <ResourceDictionary Source="Views/Themes/StatusBarTextStyle.xaml" />
+                <ResourceDictionary Source="Views/Themes/EditorToolbarButtonHoverableStyle.xaml" />
+                <ResourceDictionary Source="Views/Themes/ButtonTimelineEffectsStyle.xaml" />
+                <ResourceDictionary Source="Views/Themes/EditingArea/FmAddButtonStyle.xaml" />
+                <ResourceDictionary Source="Themes/ManagementButtonStyle.xaml" />
+                <ResourceDictionary Source="Themes/TabSmall.xaml" />
+                <ResourceDictionary Source="Themes/ImagePreview/ImagePreviewButtonStyle.xaml" />
+                <ResourceDictionary Source="Themes/FrameEditor/FrameEditorAction.xaml" />
+                <ResourceDictionary Source="Dialogs/ImagePreview/Themes/ImagePreviewDialogHeaderStyle.xaml" />
+                <ResourceDictionary Source="Dialogs/ImagePreview/Themes/UndoRedoStyle.xaml" />
+                <ResourceDictionary Source="Views/Themes/EditingArea/FmRemoveButtonStyle.xaml" />
+                <ResourceDictionary Source="Views/Themes/ManagementAreaTab.xaml" />
+                <ResourceDictionary Source="Themes/Badges/AlphaBadge.xaml" />
+                <ResourceDictionary Source="Themes/Badges/BadgeText.xaml" />
+                <ResourceDictionary Source="Themes/Badges/BetaBadge.xaml" />
+                <ResourceDictionary Source="Themes/Badges/PREBadge.xaml" />
+                <ResourceDictionary Source="Themes/Badges/RCBadge.xaml" />
+                <ResourceDictionary Source="Themes/Badges/DEVBadge.xaml" />
+                <ResourceDictionary Source="Views/Themes/BackOrForwardButton.xaml" />
+                <ResourceDictionary Source="Views/Themes/TimelineSecond.xaml" />
+                <ResourceDictionary Source="Views/Themes/Tool.xaml" />
+                <ResourceDictionary Source="Views/Themes/EditingArea/FmAddButtonGreen.xaml" />
+                <ResourceDictionary Source="Themes/ContextMenuItemStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

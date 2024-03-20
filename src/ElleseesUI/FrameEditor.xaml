@@ -1,0 +1,152 @@
+﻿<Window x:Class="ElleseesUI.FrameEditor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElleseesUI"
+        mc:Ignorable="d"
+        Title="Frame Editor" Height="400" Width="800"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        BorderBrush="Red"
+        BorderThickness="2">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="180" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="#242424">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+                <Button Style="{StaticResource UndoRedo}"
+                        x:Name="UndoButton"
+                        Click="UndoButton_Click">
+                    <Image Source="./Assets/UndoWhite.png"
+Margin="5,0,5,0" 
+                           ToolTip="Undo last interaction"/>
+                </Button>
+                <Button Style="{StaticResource UndoRedo}"
+                        x:Name="RedoButton"
+                        Click="RedoButton_Click">
+                    <Image Source="./Assets/RedoWhite.png"
+Margin="5,0,5,0"
+                           ToolTip="Redo last interaction" />
+                </Button>
+            </StackPanel>
+        </Grid>
+        
+        <Grid Grid.Row="0"
+              Grid.Column="1" Background="#303030">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right">
+                <Button Style="{StaticResource WindowButtonCloseStyle}"
+                        Click="Button_Click" />
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="1" Background="#383838">
+            <ScrollViewer>
+                <StackPanel>
+                    <TextBlock Foreground="White"
+                               FontSize="24"
+                               FontWeight="SemiBold">
+                        Actions
+                    </TextBlock>
+                    <Button Style="{StaticResource FrameEditorAction}"
+        x:Name="GrayscaleButton"
+                            Click="GrayscaleButton_Click">Grayscale</Button>
+                    <Button Style="{StaticResource FrameEditorAction}"
+        x:Name="HueButton"
+                            Click="HueButton_Click">Hue</Button>
+                    <Button Style="{StaticResource FrameEditorAction}"
+        x:Name="SaturateButton"
+                            Click="SaturateButton_Click">Saturate</Button>
+                    <Button Style="{StaticResource FrameEditorAction}"
+        x:Name="LightnessButton"
+                            Click="LightnessButton_Click">Lightness</Button>
+                    <Button Style="{StaticResource FrameEditorAction}"
+        x:Name="BrightnessButton"
+                            Click="BrightnessButton_Click">Brightness</Button>
+                    <Button Style="{StaticResource FrameEditorAction}"
+x:Name="GlowButton"
+                    Click="GlowButton_Click">Glow</Button>
+                    <Button Style="{StaticResource FrameEditorAction}"
+x:Name="GlowByButton"
+                    Click="GlowByButton_Click">Glow By</Button>
+                    <Button Style="{StaticResource FrameEditorAction}"
+        x:Name="BoxBlurButton"
+                            Click="BoxBlurButton_Click">Box Blur</Button>
+                    <Button Style="{StaticResource FrameEditorAction}"
+        x:Name="BokehBlurButton"
+                            Click="BokehBlurButton_Click">Bokeh Blur</Button>
+                    <Button Style="{StaticResource FrameEditorAction}"
+        x:Name="BlackAndWhiteButton"
+                            Click="BlackAndWhiteButton_Click">Black &amp; White</Button>
+                    <Button Style="{StaticResource FrameEditorAction}"
+        x:Name="ContrastButton"
+                            Click="ContrastButton_Click">Contrast</Button>
+                    <Button Style="{StaticResource FrameEditorAction}"
+        x:Name="BackgroundColorButton"
+                            Click="BackgroundColorButton_Click">Background Color</Button>
+                    <Button Style="{StaticResource FrameEditorAction}"
+        x:Name="ColorBlindnessButton"
+                            Click="ColorBlindnessButton_Click">Color Blindness</Button>
+                    <Button Style="{StaticResource FrameEditorAction}"
+        x:Name="CropButton"
+                            Click="CropButton_Click">Crop</Button>
+                    <Button Style="{StaticResource FrameEditorAction}"
+        x:Name="ResizeButton"
+                            Click="ResizeButton_Click">Resize</Button>
+                    <Button Style="{StaticResource FrameEditorAction}"
+        x:Name="RotateButton"
+                            Click="RotateButton_Click">Rotate</Button>
+                    <Button Style="{StaticResource FrameEditorAction}"
+        x:Name="BlurButton"
+                            Click="BlurButton_Click">Blur</Button>
+                        <Button Style="{StaticResource FrameEditorAction}"
+    x:Name="ZoomButton"
+                    Click="ZoomButton_Click">Scaling</Button>
+                        <Button Style="{StaticResource FrameEditorAction}"
+    x:Name="TextButton"
+                    Click="TextButton_Click">Text</Button>
+                    <Button Style="{StaticResource FrameEditorAction}"
+                            x:Name="RectangleFillButton"
+                            Click="RectangleFillButton_Click">Rectangle Fill</Button>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <ScrollViewer>
+                <StackPanel>
+                    <Image x:Name="Preview"
+                           Height="200"
+                           Width="600"
+                           Stretch="Fill"
+                           StretchDirection="Both" />
+                    <Button x:Name="UseDefaultTemplate"
+                            Style="{StaticResource FmAddButton}"
+                            HorizontalAlignment="Left"
+                            Width="220"
+                            Click="UseDefaultTemplate_Click"
+                            Margin="0,0,0,10">
+                        Use Default Image Template
+                    </Button>
+                    <Button x:Name="SelectImage"
+                            Style="{StaticResource FmAddButton}"
+                            HorizontalAlignment="Left"
+                            Width="220"
+                            Click="SelectImage_Click">
+                        Select Image
+                    </Button>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Window>

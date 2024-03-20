@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AboutWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CommonViewFramePages\Error.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CommonViewFramePages\NoProjectLoadedView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CommonViewFramePages\NotLoadedView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\TimelineObjects\AudioVisibility.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\TimelineObjects\EffectVisibility.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\TimelineObjects\ImageVisibility.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\TimelineObjects\TextVisibility.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\TimelineObjects\VideoVisibility.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Crashes\CrashConfirmationDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\Common\ColorPicker.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\Common\ColorPickerHex.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\Common\ColorPickerRgb.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\Common\ColorPickerRgba.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\Common\FontCategoryList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\Common\FontProviderChooser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\Common\ProviderFontBrowser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\ImagePreview\BlurValue.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\ImagePreview\BokehBlurValue.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\ImagePreview\BoxBlurValue.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\ImagePreview\BrightnessValue.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\ImagePreview\ColorBlindnessValue.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\ImagePreview\ContrastValue.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\ImagePreview\CropValue.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\ImagePreview\GlowByValue.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\ImagePreview\GrayscaleCustom.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\ImagePreview\GrayscalePicker.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\ImagePreview\HueValue.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\ImagePreview\LightnessValue.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\ImagePreview\RectangleFillValue.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\ImagePreview\ResizeValue.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\ImagePreview\RotateValue.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\ImagePreview\SaturationValue.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\ImagePreview\ScaleValue.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\ImagePreview\TextShadowOptions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogs\ImagePreview\TextValue.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ExceptionNotifyWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Export\ExportDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="FrameEditor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Home\PrimaryVideoChooser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Home\ProjectCreationDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Home\SplashScreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Home\VECIRecent.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ImagePreview.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MagicWand\MagicWandTimestampSelector.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Notifications\UI\NotificationViewUI.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ProjectLoadFailWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ToolClickUIs\TextToolClickUI.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TourUI\Steps\Start.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TourUI\Tour.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VECI\UI\ActionPicker\ActionPickerDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VECI\UI\ActionPicker\Actions\AddAudio.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VECI\UI\ActionPicker\Actions\ChangeAudioVolume.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VECI\UI\ActionPicker\Actions\ChangeGlobalAudioVolume.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VECI\UI\ActionPicker\Actions\CutClipAt.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VECI\UI\ActionPicker\Actions\InsertVideo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VECI\UI\ActionPicker\Actions\PushFileToStack.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VECI\UI\ActionPicker\Actions\SpeedUpVideo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VECI\UI\Controls\DataForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VECI\UI\ProjectCreationDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VECI\UI\VECIEditor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VideoContext\VideoContextWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VideoEditorUI.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\EditingAreaFM.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PropertyEditor\PlaceholderView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Timeline.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AboutWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CommonViewFramePages\Error.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CommonViewFramePages\NoProjectLoadedView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CommonViewFramePages\NotLoadedView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\TimelineObjects\AudioVisibility.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\TimelineObjects\EffectVisibility.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\TimelineObjects\ImageVisibility.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\TimelineObjects\TextVisibility.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\TimelineObjects\VideoVisibility.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Crashes\CrashConfirmationDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\Common\ColorPicker.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\Common\ColorPickerHex.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\Common\ColorPickerRgb.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\Common\ColorPickerRgba.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\Common\FontCategoryList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\Common\FontProviderChooser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\Common\ProviderFontBrowser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ImagePreview\BlurValue.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ImagePreview\BokehBlurValue.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ImagePreview\BoxBlurValue.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ImagePreview\BrightnessValue.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ImagePreview\ColorBlindnessValue.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ImagePreview\ContrastValue.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ImagePreview\CropValue.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ImagePreview\GlowByValue.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ImagePreview\GrayscaleCustom.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ImagePreview\GrayscalePicker.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ImagePreview\HueValue.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ImagePreview\LightnessValue.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ImagePreview\RectangleFillValue.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ImagePreview\ResizeValue.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ImagePreview\RotateValue.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ImagePreview\SaturationValue.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ImagePreview\ScaleValue.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ImagePreview\TextShadowOptions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ImagePreview\TextValue.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ImagePreview\Themes\ImagePreviewDialogHeaderStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogs\ImagePreview\Themes\UndoRedoStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ExceptionNotifyWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Export\ExportDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FrameEditor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Home\PrimaryVideoChooser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Home\ProjectCreationDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Home\SplashScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Home\VECIRecent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ImagePreview.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MagicWand\MagicWandTimestampSelector.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Notifications\UI\NotificationViewUI.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProjectLoadFailWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Badges\AlphaBadge.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Badges\BadgeText.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Badges\BetaBadge.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Badges\DEVBadge.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Badges\PREBadge.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Badges\RCBadge.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\ContextMenuItemStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\FrameEditor\FrameEditorAction.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\ImagePreview\ImagePreviewButtonStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\ManagementButtonStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\StatusBarStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\TabSmall.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\TitleBarTextStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\WindowButtonCloseStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ToolClickUIs\TextToolClickUI.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TourUI\Steps\Start.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TourUI\Tour.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VECI\UI\ActionPicker\ActionPickerDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VECI\UI\ActionPicker\Actions\AddAudio.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VECI\UI\ActionPicker\Actions\ChangeAudioVolume.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VECI\UI\ActionPicker\Actions\ChangeGlobalAudioVolume.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VECI\UI\ActionPicker\Actions\CutClipAt.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VECI\UI\ActionPicker\Actions\InsertVideo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VECI\UI\ActionPicker\Actions\PushFileToStack.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VECI\UI\ActionPicker\Actions\SpeedUpVideo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VECI\UI\Controls\DataForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VECI\UI\ProjectCreationDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VECI\UI\VECIEditor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VideoContext\VideoContextWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VideoEditorUI.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\EditingAreaFM.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PropertyEditor\PlaceholderView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Themes\BackOrForwardButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Themes\ButtonTimelineEffectsStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Themes\EditingArea\FmAddButtonGreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Themes\EditingArea\FmAddButtonStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Themes\EditingArea\FmRemoveButtonStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Themes\EditorToolbarButtonHoverableStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Themes\ManagementAreaTab.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Themes\StatusBarTextStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Themes\TimelineSecond.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Themes\Tool.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Timeline.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,128 @@
+﻿<Window x:Class="ElleseesUI.VideoEditorUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElleseesUI"
+        mc:Ignorable="d"
+        Title="ELLESEES" Height="670" Width="1270"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        BorderBrush="Red"
+        BorderThickness="2"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <!-- Columns and rows -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="160" />
+            <ColumnDefinition />
+            <ColumnDefinition Width="30" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="20" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <!-- Window icon background -->
+        <Grid Grid.Column="0" Grid.Row="0"
+              Background="#171717"
+              x:Name="UpLeftCorner">
+            <Border Style="{StaticResource AlphaBadge}">
+                <TextBlock Style="{StaticResource BadgeText}">ALPHA</TextBlock>
+            </Border>
+        </Grid>
+
+        <!-- Title bar -->
+        <Grid Grid.Column="1" Grid.Row="0"
+              Background="#171717"
+              Grid.ColumnSpan="2"
+              x:Name="TitleBarBackground"
+              MouseDown="TitleBarBackground_MouseDown">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="35" />
+            </Grid.ColumnDefinitions>
+            
+            <Button Style="{StaticResource WindowButtonCloseStyle}" Click="Button_Click"
+                    Grid.Column="1"
+                    x:Name="CloseButton" />
+
+            <Label Foreground="White"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontFamily="./Fonts/#Space Grotesk"
+                   x:Name="WindowTitle">
+                    Empty - ELLESEES 1.0
+            </Label>
+        </Grid>
+
+        <Menu Grid.Row="1" Background="#171717" Foreground="White" Grid.ColumnSpan="3"
+              x:Name="MenuRoot">
+            <MenuItem Header="File" Background="Transparent" Margin="3,0,0,0" x:Name="FileMenu">
+                <MenuItem Header="Crash ELLESEES!" Background="#454545" BorderBrush="#454545" BorderThickness="2" Click="MenuItem_Click_1" />
+            </MenuItem>
+            <MenuItem Header="View" Background="Transparent" Margin="10,0,0,0" x:Name="ViewMenu">
+                <MenuItem Header="Notifications" Background="#454545" BorderBrush="#454545" BorderThickness="2" Click="MenuItem_Click" />
+            </MenuItem>
+            <MenuItem Header="Project" Background="Transparent" Margin="10,0,0,0" x:Name="ProjectMenu">
+                <MenuItem Header="Generate ERD" Background="#454545" BorderBrush="#454545" BorderThickness="2"
+                          Click="MenuItem_Click_2"/>
+                <MenuItem Header="Begin Export" Background="#454545" BorderBrush="#454545" BorderThickness="2" Click="OnBeginExportClick" />
+            </MenuItem>
+            <MenuItem Header="Help" Background="Transparent" Margin="10,0,0,0" x:Name="HelpMenu">
+                <MenuItem Header="View Source on GitHub" Background="#454545" BorderBrush="#454545" BorderThickness="2" x:Name="MiViewSrc" Click="MiViewSrc_Click" />
+                <MenuItem Header="Tour" Background="#454545" BorderBrush="#454545" BorderThickness="2" Click="OnTourClick" />
+                <MenuItem Header="About ELLESEES..." Background="#454545" BorderBrush="#454545" BorderThickness="2" x:Name="MiAboutEllesees" Click="MiAboutEllesees_Click" />
+            </MenuItem>
+        </Menu>
+        
+        <!-- Available objects -->
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Background="#171717"
+                  x:Name="PropertyEditorBackground">
+                <Label Foreground="White"
+                       FontSize="19"
+                       FontWeight="Light"
+                       FontFamily="./Fonts/#Space Grotesk"
+                       x:Name="PropertyEditorForeground">
+                    Property Editor
+                </Label>
+            </Grid>
+
+            <Frame x:Name="PropertyEditorVisibility"
+                   Grid.Row="1"
+                   NavigationUIVisibility="Hidden"
+                   Height="580"
+                   Width="160" />
+        </Grid>
+
+        <!-- Main Frame -->
+        <Frame Grid.Row="2" Grid.Column="1"
+               Height="620"
+               Width="1080"
+               x:Name="CommonViewFrame"
+               NavigationUIVisibility="Hidden" />
+        
+        <!-- Management -->
+        <StackPanel Grid.Column="2" Grid.Row="2"
+                    Background="#171717"
+                    x:Name="ManagementPanel">
+            <Label Style="{StaticResource ManagementButton}" Width="100"
+       Margin="0,20,0,0"
+                   ToolTip="About this service"
+                   MouseLeftButtonUp="Label_MouseLeftButtonUp"
+                   x:Name="ManagementPanelItem5">
+                ABOUT
+                <Label.LayoutTransform>
+                    <RotateTransform Angle="90" />
+                </Label.LayoutTransform>
+            </Label>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,62 @@
+﻿<Window x:Class="ElleseesUI.VECI.UI.ActionPicker.Actions.SpeedUpVideo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElleseesUI.VECI.UI.ActionPicker.Actions"
+        mc:Ignorable="d"
+        Title="Speed Up Video" Height="200" Width="600"
+        BorderBrush="Lime"
+        BorderThickness="2"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="#313131">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid Background="#171717">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right">
+                <Button Style="{StaticResource WindowButtonCloseStyle}"
+                        Click="OnCloseButtonClick" />
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Grid.Row="1">
+            <TextBlock Foreground="White"
+                       FontFamily="../../../../Fonts/#Space Grotesk"
+                       FontSize="36"
+                       HorizontalAlignment="Center">
+                Set Video Speed
+            </TextBlock>
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+                <Label Foreground="White"
+                       FontFamily="../../../../Fonts/#Space Grotesk"
+                       FontSize="16">
+                    Speed Percentage:
+                </Label>
+                <TextBox Background="#242424"
+                         Foreground="White"
+                         FontFamily="../../../../Fonts/#Space Grotesk"
+                         Height="24"
+                         Width="200"
+                         BorderThickness="0"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         TextAlignment="Center"
+                         x:Name="SpeedTextBox"
+                         Text="100%"
+                         Margin="10,0,0,0" />
+            </StackPanel>
+            <Button Style="{StaticResource FmAddButton}"
+                    Click="OnOKButtonClick"
+                    Margin="0,15,0,0">
+                OK
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
