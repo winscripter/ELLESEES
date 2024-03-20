@@ -1,0 +1,7 @@
+{
+    "Version": "1.0",
+    "VersionF": 1.0,
+    "RenderOutputDirectory": "./out",
+    "TimelineDirectory": "./timeline",
+    "TimelineSplitByFrames": 1
+}

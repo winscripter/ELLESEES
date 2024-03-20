@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyTitle>ELLESEES Default project template copy tool</AssemblyTitle>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <Company>The ELLESEES Video Editing Project</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+      <Content Include="project_template\**">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="project_template\out\_empty_lock" />
+    <None Remove="project_template\timeline\audios\_empty_lock" />
+    <None Remove="project_template\timeline\frames\_empty_lock" />
+    <None Remove="project_template\timeline\images\_empty_lock" />
+    <None Remove="project_template\timeline\videos\_empty_lock" />
+  </ItemGroup>
+
+</Project>

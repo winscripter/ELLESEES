@@ -1,0 +1,6 @@
+{
+    "AudiosDirectory": "./audios",
+    "FramesDirectory": "./frames",
+    "ImagesDirectory": "./images",
+    "VideosDirectory": "./videos"
+}

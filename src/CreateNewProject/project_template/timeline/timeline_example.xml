@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    This XML document is not used by ELLESEES.
+    It is generally safe to delete this file.
+    Doing so will not inflict any changes.
+-->
+<ProjectTimeline>
+    <AudioImport Type="Mp3" Path="./audios/audio.mp3" Start="00:00:02.500" End="00:04:05.250" />
+    <VideoImport Type="Mp4" Path="./videos/video.mp4" Start="00:00:00.000" End="00:00:27.000">
+        <Speed>1.00</Speed>
+        <AllowAudio />
+    </VideoImport>
+    <ImageImport Type="Png" Path="./images/image.png" Start="00:00:05.000" End="00:00:23.0" />
+    <Text Content="Hello!" X="25" Y="85" Font="Google/Space Grotesk" Color="#FFFFFF" Size="36" Height="105" Width="280" FontStyle="Italic" />
+    <TextWithShadow Content="Hello!" X="25" Y="85" Font="Google/Space Grotesk" Color="#FFFFFF" Size="36" Height="105" Width="280" FontStyle="Italic" Sigma="8" ShadowColor="#FF0000" />
+    <Fill Start="00:00:20.000" End="00:00:30.000" Color="#FF0000" />
+    <RectangleFill X="8" Y="8" Width="24" Height="24" Color="#FF0000" Start="00:00:03.000" End="00:00:05.000" />
+    <RectangleStroke X="7" Y="7" Width="26" Height="26" Color="#00FF00" Start="00:00:03.000" End="00:00:05.000" />
+</ProjectTimeline>

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+      <AssemblyTitle>Ellesees.Base.dll</AssemblyTitle>
+      <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      <Company>The ELLESEES Video Editing Project</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.3" />
+    <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="2.1.1" />
+  </ItemGroup>
+
+</Project>
