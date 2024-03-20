@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyTitle>ELLESEES Project parser and analyzer</AssemblyTitle>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <Company>The ELLESEES Video Editing Project</Company>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ellesees.Colors\Ellesees.Colors.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\User\source\repos\Ellesees\Ellesees.ProjectParser\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\User\source\repos\Ellesees\Ellesees.ProjectParser\.editorconfig" />
+  </ItemGroup>
+
+</Project>
