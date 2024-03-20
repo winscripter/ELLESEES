@@ -1,0 +1,36 @@
+﻿<Window x:Class="ElleseesUI.TourUI.Tour"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElleseesUI.TourUI"
+        mc:Ignorable="d"
+        Title="Tour" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        BorderThickness="2"
+        BorderBrush="Red">
+    <Grid Background="#313131">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid Background="#171717">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right">
+                <Button Style="{StaticResource WindowButtonCloseStyle}"
+                        Click="Button_Click" />
+            </StackPanel>
+        </Grid>
+
+        <Frame Height="420"
+               Width="800"
+               Grid.Row="1"
+               NavigationUIVisibility="Hidden"
+               x:Name="UI">
+            
+        </Frame>
+    </Grid>
+</Window>
