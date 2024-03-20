@@ -1,0 +1,153 @@
+﻿<Window x:Class="ElleseesUI.Home.SplashScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElleseesUI.Home"
+        mc:Ignorable="d"
+        Title="SplashScreen" Height="300" Width="700"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        ShowInTaskbar="False"
+        AllowsTransparency="True"
+        Background="Transparent">
+    <Border BorderBrush="Black"
+            BorderThickness="2"
+            CornerRadius="6">
+        <Grid>
+            <Grid Height="300"
+                  Width="700"
+                  Background="#242424">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="75" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="235" />
+                    <ColumnDefinition Width="165" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Ellipse Width="120"
+                         Height="100"
+                         Fill="Blue">
+                    <Ellipse.Effect>
+                        <BlurEffect Radius="100"
+                                    KernelType="Gaussian"/>
+                    </Ellipse.Effect>
+                </Ellipse>
+
+                <Ellipse Width="100"
+                         Height="75"
+                         Grid.Column="2"
+                         Grid.Row="2"
+                         Fill="Lime">
+                    <Ellipse.Effect>
+                        <BlurEffect Radius="100"
+                                    KernelType="Gaussian"/>
+                    </Ellipse.Effect>
+                </Ellipse>
+
+                <Ellipse Width="150"
+                         Height="75"
+                         Fill="Red"
+                         Grid.Column="3">
+                    <Ellipse.Effect>
+                        <BlurEffect Radius="100"
+                                    KernelType="Gaussian"/>
+                    </Ellipse.Effect>
+                </Ellipse>
+
+                <Ellipse Width="75"
+                         Height="75"
+                         Grid.Row="3"
+                         Fill="Orange">
+                    <Ellipse.Effect>
+                        <BlurEffect Radius="100"
+                                    KernelType="Gaussian"/>
+                    </Ellipse.Effect>
+                </Ellipse>
+
+                <Ellipse Width="100"
+                         Height="75"
+                         Grid.Row="2"
+                         Grid.Column="4"
+                         Fill="Purple">
+                    <Ellipse.Effect>
+                        <BlurEffect Radius="100"
+                                    KernelType="Gaussian"/>
+                    </Ellipse.Effect>
+                </Ellipse>
+
+                <Ellipse Width="75"
+                         Height="75"
+                         Grid.Row="3"
+                         Grid.Column="3"
+                         Fill="Maroon">
+                    <Ellipse.Effect>
+                        <BlurEffect Radius="100"
+                                    KernelType="Gaussian"/>
+                    </Ellipse.Effect>
+                </Ellipse>
+
+                <Ellipse Width="120"
+                         Height="100"
+                         Grid.Column="4"
+                         Fill="DarkBlue">
+                    <Ellipse.Effect>
+                        <BlurEffect Radius="100"
+                                    KernelType="Gaussian"/>
+                    </Ellipse.Effect>
+                </Ellipse>
+            </Grid>
+            <Grid>
+                <StackPanel HorizontalAlignment="Center">
+                    <TextBlock Foreground="White"
+                               FontSize="36"
+                               FontFamily="../Fonts/#Space Grotesk"
+                           Margin="0,15,0,0">
+                    ELLESEES 1.0
+                    </TextBlock>
+                    <TextBlock Foreground="White"
+                               FontSize="16"
+                               FontFamily="../Fonts/#Space Grotesk">
+                    A powerful open-source free Video Editor
+                    </TextBlock>
+                    <TextBlock Foreground="White"
+                               FontSize="24"
+                               FontFamily="../Fonts/#Space Grotesk"
+                               Margin="0,100,0,0">
+                    Loading...
+                    </TextBlock>
+                </StackPanel>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="120" />
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Column="1"
+                           Grid.Row="1"
+                           Foreground="DimGray"
+                           TextAlignment="Center"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           FontFamily="../Fonts/#Space Grotesk"
+                           TextWrapping="Wrap">
+                    <Run FontWeight="Bold">Warning: </Run> ELLESEES is a software with an MIT license. See the file APP_LICENSE.txt for the license text.
+                </TextBlock>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

@@ -1,0 +1,90 @@
+﻿<Window x:Class="ElleseesUI.Dialogs.Common.ColorPickerRgb"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElleseesUI.Dialogs.Common"
+        mc:Ignorable="d"
+        Title="Color Picker (RGB)" Height="200" Width="600"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        BorderBrush="Lime"
+        BorderThickness="2">
+    <Grid Background="#414141"
+          x:Name="BackgroundGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid Background="#313131"
+              x:Name="TitleBar">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right">
+                <Button Style="{StaticResource WindowButtonCloseStyle}"
+                        Click="Button_Click"
+                        x:Name="CloseButton" />
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Grid.Row="1">
+            <TextBlock FontWeight="Light"
+                       Foreground="White"
+                       FontSize="22.7"
+                       HorizontalAlignment="Center"
+                       x:Name="DescriptionText"
+                       FontFamily="../../Fonts/#Space Grotesk">
+                Please enter RGB value (red, green, blue, respectively)
+            </TextBlock>
+
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+                <Label FontSize="12"
+                       Foreground="White"
+                       x:Name="RLabel"
+                       FontFamily="../../Fonts/#Space Grotesk">
+                    R
+                </Label>
+                <TextBox Foreground="White"
+                         Background="#242424"
+                         Height="30"
+                         Width="80"
+                         x:Name="R">
+
+                </TextBox>
+                <Label FontSize="12"
+                       Foreground="White"
+                       x:Name="GLabel"
+                       FontFamily="../../Fonts/#Space Grotesk">
+                    G
+                </Label>
+                <TextBox Foreground="White"
+                         Background="#242424"
+                         Height="30"
+                         Width="80"
+                         x:Name="G">
+
+                </TextBox>
+                <Label FontSize="12"
+                       Foreground="White"
+                       x:Name="BLabel"
+                       FontFamily="../../Fonts/#Space Grotesk">
+                    B
+                </Label>
+                <TextBox Foreground="White"
+                         Background="#242424"
+                         Height="30"
+                         Width="80"
+                         x:Name="B">
+
+                </TextBox>
+            </StackPanel>
+
+            <Button Style="{StaticResource FmAddButton}" x:Name="Submit"
+                    Click="Submit_Click">
+                Submit
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

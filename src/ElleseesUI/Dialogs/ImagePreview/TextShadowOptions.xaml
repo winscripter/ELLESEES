@@ -1,0 +1,70 @@
+﻿<Window x:Class="ElleseesUI.Dialogs.ImagePreview.TextShadowOptions"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElleseesUI.Dialogs.ImagePreview"
+        mc:Ignorable="d"
+        Title="Text Shadow Options" Height="200" Width="600"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        BorderBrush="Lime"
+        BorderThickness="2">
+    <Grid Background="#414141">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid Background="#313131">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right">
+                <Button Style="{StaticResource WindowButtonCloseStyle}"
+                        Click="Button_Click" />
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Grid.Row="1">
+            <StackPanel Orientation="Horizontal"
+                        Height="30">
+                <Label Foreground="White">
+                    Shadow color (CSS representation):
+                </Label>
+                <TextBox Foreground="Lime"
+                         Background="#313131"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         x:Name="CssShadowColor"
+                         FontFamily="Cascadia Code"
+                         IsEnabled="False"
+                         Width="160"
+                         Text="rgba(0, 0, 0, 1.0)" />
+                <Button Style="{StaticResource FmAddButton}"
+                        x:Name="ChangeShadowColorButton"
+                        Height="25"
+                        Click="ChangeShadowColorButton_Click"
+                        VerticalAlignment="Center">
+                    Change
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                        Height="30">
+                <Label Foreground="White">
+                    Sigma:
+                </Label>
+                <TextBox Foreground="White"
+                         Background="#313131"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         x:Name="SigmaCount"
+                         Width="160"
+                         Text="4" />
+            </StackPanel>
+            <Button Style="{StaticResource FmAddButton}"
+                    Click="Button_Click_1">
+                Submit
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

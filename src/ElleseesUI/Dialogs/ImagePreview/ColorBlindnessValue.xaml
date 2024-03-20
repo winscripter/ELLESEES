@@ -1,0 +1,150 @@
+﻿<Window x:Class="ElleseesUI.Dialogs.ImagePreview.ColorBlindnessValue"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElleseesUI.Dialogs.ImagePreview"
+        mc:Ignorable="d"
+        Title="Color Blindness" Height="300" Width="600"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        BorderBrush="Lime"
+        BorderThickness="2">
+    <Grid Background="#414141"
+          x:Name="BackgroundGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid Background="#313131"
+              x:Name="TitleBar">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right">
+                <Button Style="{StaticResource WindowButtonCloseStyle}"
+                        Click="Button_Click"
+                        x:Name="CloseButton" />
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Grid.Row="1">
+            <TextBlock Foreground="White"
+                       FontSize="36"
+                       HorizontalAlignment="Center"
+                       FontWeight="Light"
+                       x:Name="DescriptionHeader"
+                       FontFamily="../../Fonts/#Space Grotesk">
+                Color Blindness mode
+            </TextBlock>
+            <TextBlock Foreground="White"
+                       HorizontalAlignment="Center"
+                       x:Name="DescriptionText"
+                       FontFamily="../../Fonts/#Space Grotesk">
+                Hover over any mode to get better context about the hovered color blindness mode.
+            </TextBlock>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition Width="200" />
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="0"
+                        Grid.Column="0"
+                        Style="{StaticResource FmAddButton}"
+                        ToolTip="Partial color desensitivity"
+                        x:Name="Achromatomaly"
+                        Click="Achromatomaly_Click"
+                        Width="120">
+                    Achromatomaly
+                </Button>
+
+                <Button Grid.Row="0"
+                        Grid.Column="1"
+                        Style="{StaticResource FmAddButton}"
+                        ToolTip="Complete color desensitivity (Monochrome)"
+                        x:Name="Achromatopsia"
+                        Click="Achromatopsia_Click"
+                        Width="120">
+                    Achromatopsia
+                </Button>
+
+                <Button Grid.Row="0"
+                        Grid.Column="2"
+                        Style="{StaticResource FmAddButton}"
+                        ToolTip="Green weak"
+                        x:Name="Deuteranomaly"
+                        Click="Deuteranomaly_Click"
+                        Width="120">
+                    Deuteranomaly
+                </Button>
+
+                <Button Grid.Row="1"
+                        Grid.Column="0"
+                        Style="{StaticResource FmAddButton}"
+                        ToolTip="Green blind"
+                        x:Name="Deuteranopia"
+                        Click="Deuteranopia_Click"
+                        Width="120">
+                    Deuteranopia
+                </Button>
+
+                <Button Grid.Row="1"
+                        Grid.Column="1"
+                        Style="{StaticResource FmAddButton}"
+                        ToolTip="Red weak"
+                        x:Name="Protanomaly"
+                        Click="Protanomaly_Click"
+                        Width="120">
+                    Protanomaly
+                </Button>
+
+                <Button Grid.Row="1"
+                        Grid.Column="2"
+                        Style="{StaticResource FmAddButton}"
+                        ToolTip="Red blind"
+                        x:Name="Protanopia"
+                        Click="Protanopia_Click"
+                        Width="120">
+                    Protanopia
+                </Button>
+
+                <Button Grid.Row="2"
+                        Grid.Column="0"
+                        Style="{StaticResource FmAddButton}"
+                        ToolTip="Blue weak"
+                        x:Name="Tritanomaly"
+                        Click="Tritanomaly_Click"
+                        Width="120">
+                    Tritanomaly
+                </Button>
+
+                <Button Grid.Row="2"
+                        Grid.Column="2"
+                        Style="{StaticResource FmAddButton}"
+                        ToolTip="Blue blind"
+                        x:Name="Tritanopia"
+                        Click="Tritanopia_Click"
+                        Width="120">
+                    Tritanopia
+                </Button>
+
+                <Button Grid.Row="2"
+                        Grid.Column="1"
+                        Style="{StaticResource FmRemoveButton}"
+                        ToolTip="Don't apply color blindness"
+                        Click="Button_Click_1"
+                        Width="120">
+                    None
+                </Button>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

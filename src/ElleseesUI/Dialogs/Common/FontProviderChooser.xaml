@@ -1,0 +1,84 @@
+﻿<Window x:Class="ElleseesUI.Dialogs.Common.FontProviderChooser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElleseesUI.Dialogs.Common"
+        mc:Ignorable="d"
+        Title="Font Chooser" Height="250" Width="600"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        BorderThickness="2"
+        BorderBrush="Lime">
+    <Grid Background="#414141"
+          x:Name="BackgroundGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition />
+            <RowDefinition Height="35" />
+        </Grid.RowDefinitions>
+
+        <Grid Background="#313131"
+              x:Name="TitleBar">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right">
+                <Button Style="{StaticResource WindowButtonCloseStyle}"
+                        Click="Button_Click"
+                        x:Name="CloseButton" />
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Grid.Row="1">
+            <TextBlock Foreground="White"
+                       FontSize="36"
+                       HorizontalAlignment="Center"
+                       FontWeight="Light"
+                       x:Name="FontProviderHeader"
+                       FontFamily="../../Fonts/#Space Grotesk">
+                Choose a font provider
+            </TextBlock>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="520" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <ListView x:Name="FontProviders"
+                          Height="120"
+                          Background="#242424">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <WrapPanel>
+                                <Label FontSize="20"
+                                       Foreground="White"
+                                       Background="Transparent"
+                                       Content="{Binding}"
+                                       FontFamily="../../Fonts/#Space Grotesk"/>
+                            </WrapPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <Button Grid.Column="1"
+                        Style="{StaticResource FmAddButton}"
+                        Width="70"
+                        Height="100"
+                        x:Name="OkButton"
+                        Click="OkButton_Click">
+                    OK
+                </Button>
+            </Grid>
+        </StackPanel>
+        <StackPanel Grid.Row="2">
+            <Button Style="{StaticResource FmAddButton}"
+                    x:Name="BrowseFontButton"
+                    Width="595"
+                    Height="34"
+                    Click="BrowseFontButton_Click">
+                Browse fonts instead
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,100 @@
+﻿<Window x:Class="ElleseesUI.Dialogs.ImagePreview.BokehBlurValue"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElleseesUI.Dialogs.ImagePreview"
+        mc:Ignorable="d"
+        Title="Bokeh Blur" Height="200" Width="600"
+        BorderBrush="Lime"
+        BorderThickness="2"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize">
+    <Grid Background="#414141"
+          x:Name="BackgroundGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid Background="#313131"
+              x:Name="TitleBar">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right">
+                <Button Style="{StaticResource WindowButtonCloseStyle}"
+                        Click="Button_Click"
+                        x:Name="CloseButton" />
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Grid.Row="1">
+            <TextBlock Foreground="White"
+                       FontWeight="Light"
+                       HorizontalAlignment="Center"
+                       FontSize="36"
+                       x:Name="DescriptionHeader"
+                       FontFamily="../../Fonts/#Space Grotesk">
+                Bokeh Blur
+            </TextBlock>
+            <Label Foreground="White"
+                   HorizontalContentAlignment="Center"
+                   x:Name="DescriptionText"
+                   FontFamily="../../Fonts/#Space Grotesk">
+                Leave these fields empty to apply Bokeh Blur with the default behavior
+            </Label>
+            <StackPanel Orientation="Horizontal"
+                        Height="30"
+                        HorizontalAlignment="Center">
+                <Label Foreground="White"
+                       FontWeight="Bold"
+                       FontStyle="Italic"
+                       x:Name="RadiusField"
+                       FontFamily="../../Fonts/#Space Grotesk">
+                    Radius
+                </Label>
+                <TextBox Foreground="White"
+                         Background="#313131"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Width="120"
+                         Height="30"
+                         x:Name="RadiusText" />
+                <Label Foreground="White"
+                       FontWeight="Bold"
+                       FontStyle="Italic"
+                       x:Name="ComponentsField"
+                       FontFamily="../../Fonts/#Space Grotesk">
+                    Components
+                </Label>
+                <TextBox Foreground="White"
+                         Background="#313131"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Width="120"
+                         Height="30"
+                         x:Name="ComponentsText" />
+                <Label Foreground="White"
+                       FontWeight="Bold"
+                       FontStyle="Italic"
+                       x:Name="GammaField"
+                       FontFamily="../../Fonts/#Space Grotesk">
+                    Gamma
+                </Label>
+                <TextBox Foreground="White"
+                         Background="#313131"
+                          HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Width="120"
+                         Height="30"
+                         x:Name="GammaText" />
+            </StackPanel>
+
+            <Button Style="{StaticResource FmAddButton}"
+                    x:Name="Submit"
+                    Click="Submit_Click">
+                Submit
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

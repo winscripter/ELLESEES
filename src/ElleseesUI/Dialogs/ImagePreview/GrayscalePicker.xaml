@@ -1,0 +1,76 @@
+﻿<Window x:Class="ElleseesUI.Dialogs.ImagePreview.GrayscalePicker"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElleseesUI.Dialogs.ImagePreview"
+        mc:Ignorable="d"
+        Title="Pick a grayscale option" Height="250" Width="600"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        BorderThickness="2"
+        BorderBrush="Lime">
+    <Grid Background="#414141"
+          x:Name="BackgroundGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid Background="#313131"
+              x:Name="TitleBar">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right">
+                <Button Style="{StaticResource WindowButtonCloseStyle}"
+                        Click="Button_Click"
+                        x:Name="CloseButton" />
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Grid.Row="1">
+            <TextBlock FontSize="30"
+                       FontWeight="Light"
+                       Foreground="White"
+                       HorizontalAlignment="Center"
+                       FontFamily="../../Fonts/#Space Grotesk"
+                       Margin="0,0,0,10"
+                       x:Name="DescriptionHeader">
+                How would you like to apply grayscale?
+            </TextBlock>
+
+            <Button Style="{StaticResource FmAddButton}"
+                    x:Name="Bt709Kind"
+                    Click="Bt709Kind_Click"
+                    Width="250"
+                    ToolTip="BT.709 is mostly used for High Definition (HD) contents for better quality"
+                    Margin="0,0,0,10">
+                Use BT.709
+            </Button>
+            <Button Style="{StaticResource FmAddButton}"
+                    x:Name="Bt601Kind"
+                    Click="Bt601Kind_Click"
+                    Width="250"
+                    ToolTip="BT.601 is mostly used for Standard Definition (SD) contents, mostly for compatibility with legacy technologies, but also lesser quality"
+                    Margin="0,0,0,10">
+                Use BT.601
+            </Button>
+            <Button Style="{StaticResource FmAddButton}"
+                    x:Name="Custom"
+                    Click="Custom_Click"
+                    Width="250"
+                    ToolTip="Use your own grayscaling value based on your preferences"
+                    Margin="0,0,0,10">
+                Custom
+            </Button>
+            <Button Style="{StaticResource FmAddButton}"
+                    x:Name="Quit"
+                    Click="Quit_Click"
+                    Width="250"
+                    ToolTip="Do not apply grayscaling"
+                    Margin="0,0,0,10">
+                Neither (Don't apply grayscale)
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

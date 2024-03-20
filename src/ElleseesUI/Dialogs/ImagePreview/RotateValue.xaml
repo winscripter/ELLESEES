@@ -1,0 +1,57 @@
+﻿<Window x:Class="ElleseesUI.Dialogs.ImagePreview.RotateValue"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElleseesUI.Dialogs.ImagePreview"
+        mc:Ignorable="d"
+        Title="Rotate" Height="200" Width="600"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        BorderBrush="Lime"
+        BorderThickness="2">
+    <Grid Background="#414141"
+          x:Name="BackgroundGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid Background="#313131"
+              x:Name="TitleBar">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right">
+                <Button Style="{StaticResource WindowButtonCloseStyle}"
+                        Click="Button_Click"
+                        x:Name="CloseButton" />
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Grid.Row="1">
+            <TextBlock Foreground="White"
+                       FontSize="36"
+                       HorizontalAlignment="Center"
+                       FontWeight="Light"
+                       x:Name="DescriptionHeader"
+                       FontFamily="../../Fonts/#Space Grotesk">
+                Rotate
+            </TextBlock>
+            <Label Foreground="White"
+                   HorizontalAlignment="Center"
+                   x:Name="DescriptionText"
+                   FontFamily="../../Fonts/#Space Grotesk">
+                Please enter amount of degrees for rotation in the field below
+            </Label>
+            <TextBox x:Name="Deg"
+                     Foreground="White"
+                     Background="#313131"
+                     HorizontalContentAlignment="Center"
+                     VerticalContentAlignment="Center" />
+            <Button Style="{StaticResource FmAddButton}"
+                    Click="Button_Click_1">
+                Submit
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

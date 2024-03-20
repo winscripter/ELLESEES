@@ -1,0 +1,85 @@
+﻿<Window x:Class="ElleseesUI.Home.ProjectCreationDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElleseesUI.Home"
+        mc:Ignorable="d"
+        Title="Create New Project" Height="320" Width="600"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        BorderThickness="2"
+        BorderBrush="Red">
+    <Grid Background="#313131">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid Background="#171717">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right">
+                <Button Style="{StaticResource WindowButtonCloseStyle}"
+                        Click="Button_Click" />
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Grid.Row="1">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center"
+                        Margin="0,10,0,0">
+                <TextBlock Foreground="White"
+                           FontFamily="../Fonts/#Space Grotesk"
+                           FontSize="18">
+                    Project name:
+                </TextBlock>
+                <TextBox Background="#171717"
+                         Width="220"
+                         Foreground="White"
+                         Height="30"
+                         FontSize="18"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         FontFamily="../Fonts/#Space Grotesk"
+                         x:Name="ProjectName"
+                         Margin="15,0,0,0"
+                         TextChanged="ProjectName_TextChanged" />
+            </StackPanel>
+            <TextBlock Foreground="Gray"
+                       FontSize="14"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       x:Name="OutputPath"
+                       FontFamily="../Fonts/#Space Grotesk"
+                       Margin="0,5,0,15"
+                       FontWeight="Bold"
+                       TextWrapping="Wrap"
+                       TextAlignment="Center">
+                Will be saved in: **thinking**
+            </TextBlock>
+            <TextBlock Foreground="Red"
+                       FontSize="16"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       x:Name="FileNamingOk"
+                       FontFamily="../Fonts/#Space Grotesk"
+                       FontWeight="Bold"
+                       TextAlignment="Center"
+                       Height="48"
+                       TextWrapping="Wrap">
+                Project name must be specified
+            </TextBlock>
+            <Button Style="{StaticResource FmAddButton}"
+                    Margin="0,16,0,0"
+                    Click="Button_Click_1"
+                    FontSize="18"
+                    Height="32"
+                    Width="120"
+                    x:Name="ContinueButton"
+                    IsEnabled="False">
+                Create
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

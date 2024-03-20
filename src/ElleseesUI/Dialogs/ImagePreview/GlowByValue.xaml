@@ -1,0 +1,97 @@
+﻿<Window x:Class="ElleseesUI.Dialogs.ImagePreview.GlowByValue"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElleseesUI.Dialogs.ImagePreview"
+        mc:Ignorable="d"
+        Title="Glow by" Height="200" Width="600"
+        BorderBrush="Lime"
+        BorderThickness="2"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize">
+    <Grid Background="#414141"
+          x:Name="BackgroundGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="45" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid Background="#313131"
+              x:Name="TitleBar">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right">
+                <Button Style="{StaticResource WindowButtonCloseStyle}"
+                        Click="Button_Click"
+                        x:Name="CloseButton" />
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Grid.Row="1">
+            <TextBlock FontWeight="Light"
+                       FontSize="30"
+                       Foreground="White"
+                       HorizontalAlignment="Center"
+                       FontFamily="../../Fonts/#Space Grotesk"
+                       x:Name="DescriptionHeader">
+                Glow By options
+            </TextBlock>
+        </StackPanel>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="27">
+                        <Label Foreground="White"
+                               FontFamily="../../Fonts/#Space Grotesk"
+                               x:Name="CssRepresentationColor">Color (CSS representation):</Label>
+                        <TextBox IsEnabled="False"
+                                 Background="#242424"
+                                 Foreground="Lime"
+                                 FontFamily="Cascadia Code"
+                                 x:Name="CssColor"
+                                 Width="145"
+                                 Text="rgba(0, 0, 0, 1) "
+                                 HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                                 FontSize="9" />
+                    </StackPanel>
+
+                    <Button Style="{StaticResource FmAddButton}" x:Name="SetColorBtn"
+                            Click="SetColorBtn_Click">
+                        Change
+                    </Button>
+                </StackPanel>
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <StackPanel>
+                    <StackPanel Height="30" Orientation="Horizontal">
+                        <Label Foreground="White"
+                               x:Name="AmountLabel">
+                            Amount:
+                        </Label>
+                        <TextBox x:Name="Amount"
+                                 Foreground="White"
+                                 Text="400"
+                                 FontSize="16"
+                                 HorizontalContentAlignment="Center"
+                                 VerticalContentAlignment="Center"
+                                 Background="#242424" Width="120" />
+                    </StackPanel>
+
+                    <Button Style="{StaticResource FmAddButton}" x:Name="SubmitButton"
+                            Click="SubmitButton_Click">
+                        Submit
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,75 @@
+﻿<Window x:Class="ElleseesUI.Dialogs.ImagePreview.ResizeValue"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElleseesUI.Dialogs.ImagePreview"
+        mc:Ignorable="d"
+        Title="Resize" Height="200" Width="600"
+        BorderBrush="Lime"
+        BorderThickness="2"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None">
+    <Grid Background="#414141"
+          x:Name="BackgroundGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid Background="#313131"
+              x:Name="TitleBar">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right">
+                <Button Style="{StaticResource WindowButtonCloseStyle}"
+                        Click="Button_Click" />
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Grid.Row="1">
+            <TextBlock Foreground="White"
+                       FontSize="36"
+                       HorizontalAlignment="Center"
+                       FontWeight="Light"
+                       x:Name="DescriptionHeader"
+                       FontFamily="../../Fonts/#Space Grotesk">
+                Resize
+            </TextBlock>
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+                <Label Foreground="White"
+                       x:Name="WidthLabel"
+                       FontFamily="../../Fonts/#Space Grotesk">
+                    Width (in pixels)
+                </Label>
+                <TextBox Foreground="White"
+                         Background="#313131"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         x:Name="ImageWidth"
+                         Width="120">
+
+                </TextBox>
+                <Label Foreground="White"
+                       x:Name="HeightLabel"
+                       FontFamily="../../Fonts/#Space Grotesk">
+                    Height (in pixels)
+                </Label>
+                <TextBox Foreground="White"
+                         Background="#313131"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         x:Name="ImageHeight"
+                         Width="120">
+
+                </TextBox>
+            </StackPanel>
+
+            <Button Style="{StaticResource FmAddButton}"
+                    Click="Button_Click_1">
+                Submit
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

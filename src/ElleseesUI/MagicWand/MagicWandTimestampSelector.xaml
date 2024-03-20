@@ -1,0 +1,79 @@
+﻿<Window x:Class="ElleseesUI.MagicWand.MagicWandTimestampSelector"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElleseesUI.MagicWand"
+        mc:Ignorable="d"
+        Title="Magic Wand" Height="200" Width="600"
+        BorderBrush="Lime"
+        BorderThickness="2"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize">
+    <Grid Background="#313131">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid Background="#171717"
+              MouseDown="Grid_MouseDown">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right">
+                <Button Style="{StaticResource WindowButtonCloseStyle}"
+                        Click="Button_Click" />
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Grid.Row="1">
+            <TextBlock Foreground="White"
+                       HorizontalAlignment="Center"
+                       FontFamily="../Fonts/#Space Grotesk"
+                       FontSize="24">
+                Magic Wand Timestamp Selector
+            </TextBlock>
+            <StackPanel Margin="0,15,0,0">
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Center">
+                    <Label Foreground="White"
+                           FontFamily="../Fonts/#Space Grotesk"
+                           FontSize="16">
+                        Start:
+                    </Label>
+                    <TextBox Foreground="White"
+                               Background="#242424"
+                               FontFamily="../Fonts/#Space Grotesk"
+                               HorizontalContentAlignment="Center"
+                             VerticalContentAlignment="Center"
+                               x:Name="StartTimestamp"
+                             Width="200"
+                             Text="00:00:00.000"
+                             Margin="10,0,0,0" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Center">
+                    <Label Foreground="White"
+                           FontFamily="../Fonts/#Space Grotesk"
+                           FontSize="16">
+                        End:
+                    </Label>
+                    <TextBox Foreground="White"
+                             Background="#242424"
+                             FontFamily="../Fonts/#Space Grotesk"
+                             HorizontalContentAlignment="Center"
+                             VerticalContentAlignment="Center"
+                              x:Name="EndTimestamp"
+                             Width="200"
+                             Text="00:00:00.000"
+                             Margin="21,0,0,0" />
+                </StackPanel>
+            </StackPanel>
+            <Button Style="{StaticResource FmAddButton}"
+                    Click="Button_Click_1"
+                    Margin="0,10,0,0">
+                Submit
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
