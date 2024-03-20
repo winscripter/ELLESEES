@@ -1,0 +1,7 @@
+Predefined fonts that reside in the Microsoft folder are, obviously, not
+provided to you by ELLESEES. Those are Microsoft's work.
+
+Please acknowledge more info from Microsoft's font FAQ in the following URL:
+https://learn.microsoft.com/en-us/typography/fonts/font-faq
+
+Thank you.
