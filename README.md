@@ -10,3 +10,14 @@ While the video editor is powerful and nearly non-linear, it also consumes a **T
 
 # Updates
 Feel free to post an issue if you want to suggest something new or report a bug on this video editor.
+
+# Screenshots
+Start window:
+![Screenshot1](https://github.com/winscripter/ELLESEES/assets/142818255/bd5dc608-5b98-45b0-a70a-0395827d11e3)
+Editor UI (me adding text, timeline is a bit basic but I plan on improving it later):
+![Screenshot2](https://github.com/winscripter/ELLESEES/assets/142818255/9d36c881-18e9-480e-a58d-64ab7092edff)
+About window:
+![Screenshot4](https://github.com/winscripter/ELLESEES/assets/142818255/5e8d0dc9-8453-405e-b39b-fe506500a91a)
+Getting generously greeted by ELLESEES (occurs the first time you open an existing project):
+![Screenshot3](https://github.com/winscripter/ELLESEES/assets/142818255/273483ab-a984-424f-a0bd-72bdf1c5d493)
+
