@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyTitle>ELLESEES Predefined Effects</AssemblyTitle>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <Company>The ELLESEES Video Editing Project</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ellesees.Effects\Ellesees.Effects.csproj" />
+  </ItemGroup>
+
+</Project>

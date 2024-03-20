@@ -1,0 +1,34 @@
+﻿using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.PixelFormats;
+using SixLabors.ImageSharp.Processing;
+
+namespace Ellesees.Effects.Common.Transitions.Contrast;
+
+/// <summary>
+/// A transition, from max. contrast to min. contrast
+/// </summary>
+public class ContrastAnimateEnd : Effect, ITransition
+{
+    string ITransition.DisplayName => "Contrast: Maximum to Minimum";
+    TransitionKind ITransition.Kind => TransitionKind.AnimateEnd;
+
+    public override void Begin(Image<Rgba32>[] frames, string[] args)
+    {
+        RequireArgumentCount(args, 1);
+
+        var speed = int.Parse(args[0]);
+
+        float contrast = 100.0F;
+        float contrastBy = 100.0F / speed;
+
+        int i = 0;
+        foreach (var frame in frames)
+        {
+            if (i++ % speed == 0)
+            {
+                contrast -= contrastBy;
+                frame.Mutate(x => x.Contrast(contrast / 100));
+            }
+        }
+    }
+}
