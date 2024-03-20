@@ -1,0 +1,27 @@
+﻿<Page x:Class="ElleseesUI.CommonViewFramePages.NoProjectLoadedView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ElleseesUI.CommonViewFramePages"
+      mc:Ignorable="d" 
+      d:DesignHeight="620" d:DesignWidth="1080"
+      Title="NoProjectLoadedView">
+
+    <Grid Background="#363636">
+        <StackPanel>
+            <TextBlock Foreground="White"
+                       FontSize="32">
+                No project loaded
+            </TextBlock>
+            <TextBlock Foreground="White"
+                       FontSize="18">
+                You need to load a project to jump to the editor part.
+            </TextBlock>
+            <TextBlock Foreground="White"
+                       FontSize="18">
+                You can do this at any time by selecting <Bold>Project</Bold> -&gt; <Bold>Load</Bold>.
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</Page>
