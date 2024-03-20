@@ -1,4 +1,4 @@
-﻿// MIT License
+// MIT License
 // 
 // Copyright (c) 2024 winscripter
 // 
@@ -27,6 +27,7 @@ using Ellesees.ProjectParser.ProjectInfo.Effects;
 using ElleseesUI.ERD;
 using ElleseesUI.Extensions;
 using ElleseesUI.ProjectInfrastructure;
+using System.Text;
 
 namespace ElleseesUI.Generator;
 
@@ -60,9 +61,9 @@ internal class ProjectToErdGenerator
         TimeSpan? start = null;
         TimeSpan? end = null;
 
-        List<IHasTimeStamps> effects = new();
+        StringBuilder text = new();
 
-        int fileIndex = 0;
+        List<IHasTimeStamps> effects = new();
 
         foreach (var effect in _project.TimelineProvider.Effects)
         {
@@ -81,9 +82,7 @@ internal class ProjectToErdGenerator
 
             if (effect is EffectGroupEnd)
             {
-                files.Add(
-                    $"RenderingData_{++fileIndex}.erd",
-                    TimelineProviderToErdConverter.Convert(
+                text.AppendLine(TimelineProviderToErdConverter.Convert(
                         new TimelineProvider(
                             Array.Empty<ICommonImport>(),
                             Array.Empty<IImageObjectModel>(),
@@ -92,8 +91,7 @@ internal class ProjectToErdGenerator
                         ),
                         start ?? new(0, 0, 0),
                         end ?? new(0, 0, 0)
-                    )
-                );
+                    ));
 
                 start = end = null;
 
@@ -107,23 +105,22 @@ internal class ProjectToErdGenerator
 
         foreach (IImageObjectModel mod in _project.TimelineProvider.Models)
         {
-            if (mod is Ellesees.ProjectParser.ProjectInfo.ImageObjectModels.Text text)
+            if (mod is Ellesees.ProjectParser.ProjectInfo.ImageObjectModels.Text txt)
             {
-                files.Add(
-                    $"RenderingData_{++fileIndex}.erd",
-                    TimelineProviderToErdConverter.Convert(
+                text.AppendLine(TimelineProviderToErdConverter.Convert(
                         new TimelineProvider(
                             Array.Empty<ICommonImport>(),
-                            new IImageObjectModel[] { text },
+                            new IImageObjectModel[] { txt },
                             Array.Empty<IHasTimeStamps>(),
                             _project.TimelineProvider!.PrimaryVideo
                         ),
-                        text.StartDuration!,
-                        text.EndDuration!
-                    )
-                );
+                        txt.StartDuration!,
+                        txt.EndDuration!
+                    ));
             }
         }
+
+        files.Add("RenderingData_1.erd", text.ToString());
 
         return files;
     }
