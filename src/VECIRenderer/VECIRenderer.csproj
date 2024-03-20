@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+      <AssemblyTitle>ELLESEES VECI Renderer Task</AssemblyTitle>
+      <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      <Company>The ELLESEES Video Editing Project</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="VideoSharp">
+      <HintPath>..\..\VideoSharp\VideoSharp\bin\Debug\net6.0\VideoSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
