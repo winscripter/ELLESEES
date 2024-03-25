@@ -6,7 +6,7 @@ ELLESEES runs on .NET 6.0, which means you need to download .NET 6.0 Runtime fir
 Weights over 430MB, but who cares...
 
 # Learning tool
-You can use ELLESEES as a learning tool to learn how to code up video editors with C#. If you ever get confused, please **do not hesitate** to open an issue post and write what you'd like to know when it comes to making video editors with C#, I'll be happy to help! For example:
+You can use ELLESEES as a learning tool to learn how to code up video editors with C#. If you ever get confused, please **do not hesitate** to open a discussion and write what you'd like to know when it comes to making video editors with C#, I'll be happy to help! For example:
 
 ### Title: How does ELLESEES add text to an image within given timestamps?
 Body: *Can you please explain how does ELLESEES add text to an image within the given timestamp? Thanks in advance!*
