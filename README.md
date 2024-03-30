@@ -26,9 +26,6 @@ Feel free to post an issue if you want to suggest something new or report a bug 
 Start window:
 ![Screenshot1](https://github.com/winscripter/ELLESEES/assets/142818255/bd5dc608-5b98-45b0-a70a-0395827d11e3)
 
-# Too Basic
-Announcement: I'm working on another video editor, this one is just too bad. No playback, half-linear, no way to stop exporting, no responsible UI, limited features, etc. The in-progress video editor should **theoretically** meet those requirements.
-
 Editor UI (me adding text, timeline is a bit basic but I plan on improving it later):
 ![Screenshot2](https://github.com/winscripter/ELLESEES/assets/142818255/9d36c881-18e9-480e-a58d-64ab7092edff)
 About window:
@@ -36,3 +33,6 @@ About window:
 Getting generously greeted by ELLESEES (occurs the first time you open an existing project):
 ![Screenshot3](https://github.com/winscripter/ELLESEES/assets/142818255/273483ab-a984-424f-a0bd-72bdf1c5d493)
 
+
+# Too Basic
+Announcement: I'm working on another video editor, this one is just too bad. No playback, half-linear, no way to stop exporting, no responsible UI, limited features, etc. The in-progress video editor should **theoretically** meet those requirements.
