@@ -18,7 +18,3 @@ About window:
 ![Screenshot4](https://github.com/winscripter/ELLESEES/assets/142818255/5e8d0dc9-8453-405e-b39b-fe506500a91a)
 Getting generously greeted by ELLESEES (occurs the first time you open an existing project):
 ![Screenshot3](https://github.com/winscripter/ELLESEES/assets/142818255/273483ab-a984-424f-a0bd-72bdf1c5d493)
-
-
-# Too Basic
-Announcement: I'm working on another video editor, this one is just too bad. No playback, half-linear, no way to stop exporting, no responsible UI, limited features, etc. The in-progress video editor should **theoretically** meet those requirements.
