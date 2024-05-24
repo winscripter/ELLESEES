@@ -1,6 +1,7 @@
 # ELLESEES
 This is a video editor project I've wrote. Called it "ELLESEES" (Edit Less - Less Editing; See Everything - Everyone Sees). Yeah, if you call it stupid, I agree. I wasn't
 familiar with video editing at the time and just assumed this one is powerful. However, it can edit videos in some ways, like contrast, advanced text tool, and other.
+Abandoned it the same day as the release :D
 
 Since then, I just migrated to Clipchamp. Microsoft did a good job on that one. :D
 
