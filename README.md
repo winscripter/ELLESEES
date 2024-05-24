@@ -1,9 +1,8 @@
 # ELLESEES
-After 1.5 months of work and just about 400 lines of code less than 40,000 LoC, I'm very excited to announce ELLESEES! It stands for **Edit Less - Less Editing; See Everywhere - Everyone Sees**, e.g. **edit - infer**. This may not be a real motto right now, but as I keep updating the free video editor with more ideas coming into my mind I think the motto may eventually make sense. Either way, what else would I think of? 😂
+This is a video editor project I've wrote. Called it "ELLESEES" (Edit Less - Less Editing; See Everything - Everyone Sees). Yeah, if you call it stupid, I agree. I wasn't
+familiar with video editing at the time and just assumed this one is powerful. However, it can edit videos in some ways, like contrast, advanced text tool, and other.
 
-ELLESEES runs on .NET 6.0, which means you need to download .NET 6.0 Runtime first to run ELLESEES. .NET 6.0 can run on a wide variety of systems, like Windows 7 and later, macOS, Linux, etc, but since ELLESEES is written using WPF it only runs on Windows.
-
-Weights over 430MB, but who cares...
+Since then, I just migrated to Clipchamp. Microsoft did a good job on that one. :D
 
 # Learning tool
 You can use ELLESEES as a learning tool to learn how to code up video editors with C#. If you ever get confused, please **do not hesitate** to open a discussion and write what you'd like to know when it comes to making video editors with C#, I'll be happy to help! For example:
