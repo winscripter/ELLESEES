@@ -15,12 +15,6 @@ ELLESEES adds text to an image with the following steps:
 2. Within all frames under the `temp` folder, we use `SixLabors.ImageSharp` to add text to all of those frames
 3. We then add these frames back to the video, starting at a given timestamp and overwriting next frames.
 
-# The Great Thing about this Video Editor
-While the video editor is powerful and nearly non-linear, it also consumes a **TON** of RAM during exports, especially when working with **ELLESEES VECI** (Video Extra Context &amp; Information). However, it doesn't consume much VRAM. The editor doesn't require any hardware requirements, so be cautious. Generally, I recommend using ELLESEES with at least 16GB RAM. The great thing about high memory usage but nearly no VRAM usage is that VRAM can't just be increased - you'll need to buy an expensive graphics card if you need more VRAM. Which is not the case for RAM, because RAM is extremely cheap compared to VRAM these days. For reference, 64GB RAM should run you about $400 in 2024.
-
-# Updates
-Feel free to post an issue if you want to suggest something new or report a bug on this video editor.
-
 # Screenshots
 Start window:
 ![Screenshot1](https://github.com/winscripter/ELLESEES/assets/142818255/bd5dc608-5b98-45b0-a70a-0395827d11e3)
