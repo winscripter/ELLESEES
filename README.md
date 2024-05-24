@@ -5,15 +5,7 @@ familiar with video editing at the time and just assumed this one is powerful. H
 Since then, I just migrated to Clipchamp. Microsoft did a good job on that one. :D
 
 # Learning tool
-You can use ELLESEES as a learning tool to learn how to code up video editors with C#. If you ever get confused, please **do not hesitate** to open a discussion and write what you'd like to know when it comes to making video editors with C#, I'll be happy to help! For example:
-
-### Title: How does ELLESEES add text to an image within given timestamps?
-Body: *Can you please explain how does ELLESEES add text to an image within the given timestamp? Thanks in advance!*
-### My response
-ELLESEES adds text to an image with the following steps:
-1. Extract frames within given timestamps to a folder like `temp`
-2. Within all frames under the `temp` folder, we use `SixLabors.ImageSharp` to add text to all of those frames
-3. We then add these frames back to the video, starting at a given timestamp and overwriting next frames.
+You can use ELLESEES as a learning tool to learn how to code up video editors with C#. If you ever get confused, please **do not hesitate** to open a discussion and write what you'd like to know when it comes to making video editors with C#, I'll be happy to help!
 
 # Screenshots
 Start window:
