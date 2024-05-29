@@ -9,6 +9,8 @@ Literally, please don't use this video editor to edit real-world videos. It's on
 Digging through the source code, you'll find many things like "this is not yet implemented, but it will be implemented soon" (soon - never).
 Stick to other video editors, like VEGAS Pro, Adobe Premiere Pro, or Adobe After Effects. Free video editors include DaVinci Resolve, Clipchamp, and more.
 
+If you need to edit videos programmatically with C#, I've made a whole separate library + NuGet package for that, [dotnetVEE](https://github.com/winscripter/dotnetVEE), but it is based on FFmpeg, although it is cross-platform. Don't learn anything from this video editor.
+
 # Screenshots
 Start window:
 ![Screenshot1](https://github.com/winscripter/ELLESEES/assets/142818255/bd5dc608-5b98-45b0-a70a-0395827d11e3)
