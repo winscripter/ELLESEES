@@ -7,7 +7,7 @@ Since then, I just migrated to Clipchamp. Microsoft did a good job on that one. 
 
 Literally, please don't use this video editor to edit real-world videos. It's only made as a learning tool. Doesn't even support playback.
 Digging through the source code, you'll find many things like "this is not yet implemented, but it will be implemented soon" (soon - never).
-Stick to other video editors, like VEGAS Pro, Adobe Premiere Pro, Adobe After Effects, DaVinci Resolve, Clipchamp, and more.
+Stick to other video editors, like VEGAS Pro, Adobe Premiere Pro, or Adobe After Effects. Free video editors include DaVinci Resolve, Clipchamp, and more.
 
 # Screenshots
 Start window:
