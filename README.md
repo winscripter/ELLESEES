@@ -5,14 +5,15 @@ Abandoned it the same day as the release :D
 
 Since then, I just migrated to Clipchamp. Microsoft did a good job on that one. :D
 
-# Learning tool
-You can use ELLESEES as a learning tool to learn how to code up video editors with C#. If you ever get confused, please **do not hesitate** to open a discussion and write what you'd like to know when it comes to making video editors with C#, I'll be happy to help!
+Literally, please don't use this video editor to edit real-world videos. It's only made as a learning tool. Doesn't even support playback.
+Digging through the source code, you'll find many things like "this is not yet implemented, but it will be implemented soon" (soon - never).
+Stick to other video editors, like VEGAS Pro, Adobe Premiere Pro, Adobe After Effects, DaVinci Resolve, Clipchamp, and more.
 
 # Screenshots
 Start window:
 ![Screenshot1](https://github.com/winscripter/ELLESEES/assets/142818255/bd5dc608-5b98-45b0-a70a-0395827d11e3)
 
-Editor UI (me adding text, timeline is a bit basic but I plan on improving it later):
+Editor UI (me adding text, timeline is a bit basic):
 ![Screenshot2](https://github.com/winscripter/ELLESEES/assets/142818255/9d36c881-18e9-480e-a58d-64ab7092edff)
 About window:
 ![Screenshot4](https://github.com/winscripter/ELLESEES/assets/142818255/5e8d0dc9-8453-405e-b39b-fe506500a91a)
