@@ -11,6 +11,9 @@ Stick to other video editors, like VEGAS Pro, Adobe Premiere Pro, or Adobe After
 
 If you need to edit videos programmatically with C#, I've made a whole separate library + NuGet package for that, [dotnetVEE](https://github.com/winscripter/dotnetVEE), but it is based on FFmpeg, although it is cross-platform. Don't learn anything from this video editor.
 
+Speaking about the icon, I didn't really put any effort into it. I was completely unaware of what is suitable as an icon, so what I did?
+Created an ellipse and painted it with a gradient of red/blue. There's a great chance that there's some company out there that has a similar icon...
+
 # Screenshots
 Start window:
 ![Screenshot1](https://github.com/winscripter/ELLESEES/assets/142818255/bd5dc608-5b98-45b0-a70a-0395827d11e3)
